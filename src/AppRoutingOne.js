@@ -1,13 +1,14 @@
 import "./App.css";
+import "./styles/menu.scss";
 import {
     createBrowserRouter as Router,
-    Route,
     RouterProvider,
 } from "react-router-dom";
 import HomePage from "./pages/home/homePage";
 import NotFoundPage from "./pages/error/NotFoundPage";
 import RegisterForm from "./components/pure/forms/registerForm";
-import TaskList from "./components/container/task_list";
+import TaskPage from "./pages/taskPage";
+import MenuComponent from "./components/pure/menuComponent";
 
 const router = Router([
     {
@@ -21,13 +22,18 @@ const router = Router([
     },
     {
         path: "Tasks",
-        element: <TaskList />,
+        element: <TaskPage />,
     },
 ]);
 function AppRoutingOne() {
     return (
         <div>
-            <RouterProvider router={router} />
+            <header className="todo-header">
+                <MenuComponent />
+            </header>
+            <main>
+                <RouterProvider router={router} />
+            </main>
         </div>
     );
 }
