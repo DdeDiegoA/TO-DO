@@ -1,0 +1,21 @@
+.task-name{
+    font-weight: bold;
+    color: cadetblue;
+    
+}
+.icon{
+    cursor: pointer;
+}
+.task-completed{
+    background-color: rgba(232, 244, 213, 0.692);
+    text-decoration: line-through;
+    border: 1.1px solid rgba(0, 0, 0, 0.123);
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.606);
+}
+.task-pending{
+    background-color: rgba(251, 154, 154, 0.307);
+    text-decoration: none;
+    border: 1.02px solid rgba(0, 0, 0, 0.123);
+    font-weight: 600;
+}
