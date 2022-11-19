@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link, Route, Routes } from "react-router-dom";
 
 const MenuComponent = () => {
     return (
@@ -16,6 +17,9 @@ const MenuComponent = () => {
                     </Nav.Link>
                     <Nav.Link href="Register" className="nv-link">
                         Register
+                    </Nav.Link>
+                    <Nav.Link href="Login" className="nv-link">
+                        Login
                     </Nav.Link>
                 </Navbar.Collapse>
             </Container>
